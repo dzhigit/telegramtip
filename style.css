@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: #0d0d0d;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tip-container {
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.coin {
+  font-size: 5rem;
+  animation: bounce 0.5s ease-in-out infinite alternate;
+}
+
+.username {
+  margin-top: 20px;
+  font-size: 2rem;
+  animation: popIn 1s ease-out;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
